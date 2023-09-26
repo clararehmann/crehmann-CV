@@ -1,0 +1,252 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Template: Curriculum Vitae
+%
+% Source: http://www.howtotex.com/
+% Feel free to distribute this template, but please keep the
+% referal to HowToTeX.com.
+% Date: July 2011
+%Version for spanish users, by dgarhdez
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% How to use writeLaTeX: 
+%
+% You edit the source code here on the left, and the preview on the
+% right shows you the result within a few seconds.
+%
+% Bookmark this page and share the URL with your co-authors. They can
+% edit at the same time!
+%
+% You can upload figures, bibliographies, custom classes and
+% styles using the files menu.
+%
+% If you're new to LaTeX, the wikibook is a great place to start:
+% http://en.wikibooks.org/wiki/LaTeX
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[12pt]{extarticle}
+\usepackage[hashEnumerators,smartEllipses]{markdown}
+\usepackage{geometry}
+\usepackage{hanging}
+\geometry{letterpaper, margin=1in}
+\usepackage[protrusion=true,expansion=true]{microtype}
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage{amssymb}
+\pagestyle{empty}           % No pagenumbers/headers/footers
+
+%%% Macros
+%%% ------------------------------------------------------------
+
+
+\newcommand{\MyName}[1]{ % Name
+                \Huge \hfill #1
+                \par \normalsize \normalfont}
+		
+\newcommand{\MySlogan}[1]{ % Slogan (optional)
+		\large \usefont\hfill \textit{#1}
+		\par \normalsize \normalfont}
+
+\newcommand{\NewPart}[1]{\section*{{#1}}}
+
+\newcommand{\PersonalEntry}[2]{
+		\noindent\hangindent=2em\hangafter=0 % Indentation
+		\parbox{\spacebox}{        % Box to align text
+		\textit{#2}}		       % Entry name (birth, address, etc.)
+		\hspace{1.5em} #2 \par}    % Entry value
+
+\newcommand{\SkillsEntry}[2]{      % Same as \PersonalEntry
+		\noindent\hangindent=0em\hangafter=5 % Indentation
+		\parbox{        % Box to align text
+		\textit{#1}}			   % Entry name (birth, address, etc.)
+		\hangindent#2 \par}    % Entry value	
+		
+\newcommand{\EducationEntry}[5]{
+		\noindent \textbf{#1} \small{#2} \hfill {#3} \par   % Study
+		%\hfill%} \par  % Duration
+	    {#4} \small\textit{#4} \par        % School
+%		\begin{hangparas}{1in}{1} #4 % Description
+		\normalsize \par
+		\vspace{2.5mm}}%}
+		
+\newcommand{\UndergradEducationEntry}[9]{
+		\noindent \textbf{#1} \small{#2} \hfill {#3} \par   % Study
+		%\hfill%} \par  % Duration
+	    {#4} \small\textit{#5} \hfill {#6} \par        % School
+	    {#7} \small\textit{#8} \hfill {#9} \par
+%		\begin{hangparas}{1in}{1} #4 % Description
+		\normalsize \par
+		\vspace{2.5mm}}
+
+\newcommand{\WorkEntry}[5]{				  % Same as \EducationEntry
+		\noindent \textbf{#1} \hfill {#2} \par  % Duration
+		\noindent {#3}, \textit{#4} \par              % Company
+		{\narrower
+		    \noindent {#5}
+		\normalsize \par}
+		\vspace{2.5mm}
+		}
+		
+\newcommand{\TeachingEntry}[5]{
+        \noindent \textbf{#1} \hfill {#2} \par
+        \noindent {#3} \textit{\small{#4}} \par
+        {\narrower \noindent {#5} \normalsize \par }
+        \vspace{2.5mm}
+        }
+        
+\newcommand{\ConferenceEntry}[5]{
+        \noindent \textbf{#1} \hfill {#2} \par
+        \noindent {#3}, \textit{\small{#4}} \par
+        {\narrower \noindent {#5} \normalsize \par }
+        \vspace{2.5mm}
+        }
+        
+
+
+
+%%% Begin Document
+%%% ------------------------------------------------------------
+\begin{document}
+% you can upload a photo and include it here...
+%\begin{wrapfigure}{l}{0.5\textwidth}
+%	\vspace*{-2em}
+%		\includegraphics[width=0.15\textwidth]{photo}
+%\end{wrapfigure}
+
+\MyName{Clara Rehmann}
+
+
+
+%%% Personal details
+%%% ------------------------------------------------------------
+
+\noindent\textbf{\href{mailto:crehmann@uoregon.edu}{crehmann@uoregon.edu}} \newline
+\textbf{(503) 799 - 1719} \newline
+\textbf{\href{http://github.com/clararehmann}{github.com/clararehmann}} \newline
+Institute of Ecology and Evolution, University of Oregon, Eugene, OR 
+
+%%% Education
+%%% ------------------------------------------------------------
+\NewPart{Education}
+
+\EducationEntry{Ph.D.}{Ecology and Evolutionary Biology}{September 2021 - present}{University of Oregon}{Eugene, Oregon}
+ 
+\UndergradEducationEntry{Bachelor of Science}{Biology}{June 2020}
+{University of Oregon}{Eugene, Oregon}{September 2018 - June 2020}
+{University of California, Los Angeles}{Los Angeles, California}{September 2017 - June 2018}
+
+
+\NewPart{Research experience}
+
+\WorkEntry{Spatial dynamics of selective sweeps}{September 2022 - present}
+{Advisor: Dr. Andrew Kern}{University of Oregon}
+{Simulation-based research for PhD dissertation investigating the effects of spatial population structure on selective sweeps.}
+
+
+\WorkEntry{Machine learning inference of location from genetic data}{June 2020 - present}
+{Advisor: Dr. Andrew Kern}{University of Oregon}
+{Simulation-based research investigating the impact of spatially-biased training data on machine learning inference of location from genetic data.
+}
+
+\WorkEntry{Cross-species analysis of transcription expression}{March 2022 - June 2022}
+{Advisor: Dr. William Cresko}{University of Oregon}
+{Rotation project assessing the effects of 
+cross-species scRNA-seq integration methods on analysis outcomes.}
+
+\WorkEntry{Modeling high-order epistasis in populations}{September 2021 - December 2021}
+{Advisor: Dr. Michael Harms}{University of Oregon}
+{Rotation project simulating population-level evolutionary trajectories across fitness landscapes.
+}
+
+\WorkEntry{Bacterial-host evolutionary conflict}{April 2020 - June 2021}
+{Advisor: Dr. Matthew Barber}{University of Oregon}
+{Computational and experimental work investigating coevolutionary dynamics between the primate immune system and bacteria.}
+
+\WorkEntry{Fitness effects of inaccurate translation}{September 2017 - June 2018}
+{Advisor: Dr. Beth Lazazzera}{University of California, Los Angeles}
+{Experimental work investigating impacts of the loss of aminoacyl-tRNA synthetase editing on \textit{E. coli} fitness}
+
+\NewPart{Teaching Experience}
+
+\TeachingEntry{Computational Genetics}{Spring 2023}
+{Guest Lecturer}{Department of Biology, University of Oregon}
+{Lectured on principal component analysis and data visualization.}
+
+\TeachingEntry{Evolutionary Biology}{Fall 2022}
+{Guest Lecturer}{Department of Biology, University of Oregon}
+{Lectured on genotypic and phenotypic variation.}
+
+\TeachingEntry{General Biology IV: Mechanisms}{Spring 2022}
+{Graduate Employee}{Department of Biology, University of Oregon}
+{Lead and instructed students during wet and dry lab activities, graded assignments and assisted in curriculum development.}
+
+\TeachingEntry{Immunology and Infectious Disease}{Winter 2022}
+{Graduate Employee}{Department of Biology, University of Oregon}
+{Developed discussion material, lead and instructed students during discussions, and graded assignments.}
+
+\TeachingEntry{Evolutionary Biology}{Fall 2021}
+{Graduate Employee}{Department of Biology, University of Oregon}
+{Lead student discussions of publications in evolutionary biology, and graded assignments.}
+
+\TeachingEntry{Marine Biology}{Winter 2020}
+{Biology Undergraduate Lab Assistant}{Department of Biology, University of Oregon}
+{Assisted in instruction of students during wet lab activities.}
+
+\TeachingEntry{General Biology IV: Mechanisms}{Summer 2019}
+{Biology Tutor for Undergraduates}{Department of Biology, University of Oregon}
+{Assisted in instruction of students during lectures and wet and dry lab activities}
+
+\NewPart{Conferences and Meetings}
+
+\ConferenceEntry{SMBE}{July 2023}
+{Society for Moleculary Biology and Evolution}{Ferrara, Italy}
+{Poster: Location, location, location: Evaluating evidence for co-geography in the Anopheles Plasmodium host-parasite system}
+
+\ConferenceEntry{EVO-WIBO}{April 2023}
+{American Society of Naturalists}{Port Townsend, Washington, USA}
+{Poster: Location, location, location: Dissecting errors in machine learning prediction of geography}
+
+\ConferenceEntry{Population, Evolutionary, and Quantitative Genetics}{June 2022}
+{Genetics Society of America}{Asilomar, California, USA}
+{Poster: Location, location, location: Dissecting errors in machine learning prediction of geography}
+
+\ConferenceEntry{Probabilistic Modeling in Genomics}{April 2021}
+{Cold Spring Harbor Laboratories}{virtual}
+{Poster: Location, location, location: Dissecting errors in machine learning prediction of geography}
+
+\ConferenceEntry{Undergraduate Research Symposium}{May 2019}
+{University of Oregon}{Eugene, Oregon, USA}
+{Poster: Reduced success of urchin fertilization under low pH conditions}
+
+\NewPart{Publications}
+
+\textbf{In revision} \par
+\vspace{2.5mm}
+\noindent\hangindent=2em\hangafter=1\textbf{Rehmann CR}, Ralph PL, Kern AD. Evaluating evidence for co-geography in the Anopheles Plasmodium host-parasite system. DOI: \href{doi.org/10.1101/2023.07.17.549405}{10.1101/2023.07.17.549405}
+
+\NewPart{Outreach and Community Involvement}
+
+\noindent \textbf{Women in Graduate Sciences}  \hfill Fall 2021 - present \par
+\vspace{1mm}
+\textit{Public Relations Chair} \hfill Academic Year 2023 - 2024 \par
+{\narrower \hangindent=0em\hangafter=1 {Communicating with WGS members about upcoming events, opportunities, and gatherings; 
+                                        advertising WGS events to the on- and off-campus community.} \normalsize \par }
+\vspace{1mm}
+\textit{Social Co-chair} \hfill Academic Year 2022 - 2023 \par
+{\narrower \hangindent=0em\hangafter=1 {Planning and organizing social events for WGS members and the local community.} \normalsize \par }
+\vspace{1mm}
+\textit{Mad Duck Outreach} \hfill Winter 2023 - present \par
+{\narrower \hangindent=1.5em\hangafter=1 {Helping to facilitate on-campus science activities for middle school students on furlough days.} \normalsize \par }
+\vspace{2.5mm}
+\noindent \textbf{Graduate Evolutionary Biology and Ecology Students} \hfill Fall 2021 - present \par
+\vspace{1mm}
+\textit{Seminar committee} \hfill Academic Year 2022 - 2023 \par
+{\narrower \hangindent=1.5em\hangafter=1 {Helping plan and organize an annual free public seminar on current topics in biology.} \normalsize \par }
+\vspace{2.5mm}
+\noindent \textbf{Genetics Society of America Member} \hfill Winter 2022 - present \par
+\vspace{2.5mm}
+\noindent \textbf{American Society of Naturalists} \hfill Winter 2023 - present \par
+\vspace{2.5mm}
+\noindent \textbf{Society for Molecular Biology and Evolution} \hfill Spring 2023 - present \par
+
+
+\end{document}
