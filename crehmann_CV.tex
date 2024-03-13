@@ -23,11 +23,12 @@
 % http://en.wikibooks.org/wiki/LaTeX
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\documentclass[12pt]{extarticle}
+\documentclass[11pt]{extarticle}
 \usepackage[hashEnumerators,smartEllipses]{markdown}
 \usepackage{geometry}
 \usepackage{hanging}
-\geometry{letterpaper, margin=1in}
+\usepackage{fontawesome}
+\geometry{letterpaper, margin=0.9in}
 \usepackage[protrusion=true,expansion=true]{microtype}
 \usepackage{setspace}
 \usepackage{hyperref}
@@ -119,10 +120,11 @@
 %%% Personal details
 %%% ------------------------------------------------------------
 
-\noindent\textbf{\href{mailto:crehmann@uoregon.edu}{crehmann@uoregon.edu}} \newline
-\textbf{(503) 799 - 1719} \newline
-\textbf{\href{http://github.com/clararehmann}{github.com/clararehmann}} \newline
-Institute of Ecology and Evolution, University of Oregon, Eugene, OR 
+\noindent\textbf{Ph.D. Candidate} \newline
+Institute of Ecology and Evolution, University of Oregon \newline
+\faEnvelope \hspace{1mm} \textbf{\href{mailto:crehmann@uoregon.edu}{crehmann@uoregon.edu}} \newline
+\faLink \hspace{1mm} \textbf{\href{http://clararehmann.github.io/}{clararehmann.github.io}} \newline
+\faGithub \hspace{1mm} \textbf{\href{http://github.com/clararehmann}{github.com/clararehmann}} \newline
 
 %%% Education
 %%% ------------------------------------------------------------
@@ -140,7 +142,6 @@ Institute of Ecology and Evolution, University of Oregon, Eugene, OR
 \WorkEntry{Spatial dynamics of selective sweeps}{September 2022 - present}
 {Advisor: Dr. Andrew Kern}{University of Oregon}
 {Simulation-based research for PhD dissertation investigating the effects of spatial population structure on selective sweeps.}
-
 
 \WorkEntry{Machine learning inference of location from genetic data}{June 2020 - present}
 {Advisor: Dr. Andrew Kern}{University of Oregon}
@@ -166,6 +167,10 @@ cross-species scRNA-seq integration methods on analysis outcomes.}
 {Experimental work investigating impacts of the loss of aminoacyl-tRNA synthetase editing on \textit{E. coli} fitness}
 
 \NewPart{Teaching Experience}
+
+\TeachingEntry{Evolutionary Biology}{Fall 2023}
+{Guest Lecturer}{Department of Biology, University of Oregon}
+{Lectured on integrating evolutionary forces.}
 
 \TeachingEntry{Computational Genetics}{Spring 2023}
 {Guest Lecturer}{Department of Biology, University of Oregon}
@@ -197,6 +202,10 @@ cross-species scRNA-seq integration methods on analysis outcomes.}
 
 \NewPart{Conferences and Meetings}
 
+\ConferenceEntry{The Allied Genomics Conference}{March 2024}
+{Genetics Society of America}{National Harbor, Maryland, USA}
+{Poster: In space no one can hear you sweep: Dynamics and outcomes of selective sweeps in continuous geographic space}
+
 \ConferenceEntry{SMBE}{July 2023}
 {Society for Moleculary Biology and Evolution}{Ferrara, Italy}
 {Poster: Location, location, location: Evaluating evidence for co-geography in the Anopheles Plasmodium host-parasite system}
@@ -213,15 +222,13 @@ cross-species scRNA-seq integration methods on analysis outcomes.}
 {Cold Spring Harbor Laboratories}{virtual}
 {Poster: Location, location, location: Dissecting errors in machine learning prediction of geography}
 
-\ConferenceEntry{Undergraduate Research Symposium}{May 2019}
-{University of Oregon}{Eugene, Oregon, USA}
-{Poster: Reduced success of urchin fertilization under low pH conditions}
-
 \NewPart{Publications}
 
-\textbf{In revision} \par
 \vspace{2.5mm}
-\noindent\hangindent=2em\hangafter=1\textbf{Rehmann CR}, Ralph PL, Kern AD. Evaluating evidence for co-geography in the Anopheles Plasmodium host-parasite system. DOI: \href{doi.org/10.1101/2023.07.17.549405}{10.1101/2023.07.17.549405}
+\noindent\hangindent=2em\hangafter=1\textbf{Rehmann CR}, Ralph PL, Kern AD. Evaluating evidence for co-geography in the Anopheles Plasmodium host-parasite system.  G3 Genes|Genomes|Genetics, Volume 14, Issue 3, March 2024, jkae008, DOI: \href{doi.org/10.1093/g3journal/jkae008}{10.1093/g3journal/jkae008}
+
+\vspace{2.5mm}
+\noindent\hangindent=2em\hangafter=1\textit{In prep:} Chevy E, Miseon J, Caudill V, Champer S, Haller B, \textbf{Rehmann CR}, Smith CS, Tittes S, Messer P, Kern AD, Ramachandran S, Ralph PL. Population genetics meets ecology: a guide to simulations in continuous geography.
 
 \NewPart{Outreach and Community Involvement}
 
@@ -239,7 +246,11 @@ cross-species scRNA-seq integration methods on analysis outcomes.}
 \vspace{2.5mm}
 \noindent \textbf{Graduate Evolutionary Biology and Ecology Students} \hfill Fall 2021 - present \par
 \vspace{1mm}
-\textit{Seminar committee} \hfill Academic Year 2022 - 2023 \par
+\textit{SPECIE2S chair} \hfill Academic year 2023 - 2024 \par
+{\narrower \hangindent=1.5em\hangafter=1 {Organizing and facilitating weekly writing groups and peer feedback sessions for graduate students.} \normalsize \par }
+\vspace{2.5mm}
+\vspace{1mm}
+\textit{Seminar committee} \hfill Academic Year 2022 - 2023; 2023 - 2024 \par
 {\narrower \hangindent=1.5em\hangafter=1 {Helping plan and organize an annual free public seminar on current topics in biology.} \normalsize \par }
 \vspace{2.5mm}
 \noindent \textbf{Genetics Society of America Member} \hfill Winter 2022 - present \par
