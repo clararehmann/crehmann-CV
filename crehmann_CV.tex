@@ -28,7 +28,7 @@
 \usepackage{geometry}
 \usepackage{hanging}
 \usepackage{fontawesome}
-\geometry{letterpaper, margin=0.9in}
+\geometry{letterpaper, margin=0.8in}
 \usepackage[protrusion=true,expansion=true]{microtype}
 \usepackage{setspace}
 \usepackage{hyperref}
@@ -61,13 +61,13 @@
 		\textit{#1}}			   % Entry name (birth, address, etc.)
 		\hangindent#2 \par}    % Entry value	
 		
-\newcommand{\EducationEntry}[5]{
+\newcommand{\EducationEntry}[6]{
 		\noindent \textbf{#1} \small{#2} \hfill {#3} \par   % Study
 		%\hfill%} \par  % Duration
 	    {#4} \small\textit{#5} \par        % School
-%		\begin{hangparas}{1in}{1} #4 % Description
+		{#6} % Description
 		\normalsize \par
-		\vspace{2.5mm}}%}
+		\vspace{2.5mm}}
 		
 \newcommand{\UndergradEducationEntry}[9]{
 		\noindent \textbf{#1} \small{#2} \hfill {#3} \par   % Study
@@ -130,7 +130,7 @@ Institute of Ecology and Evolution, University of Oregon \newline
 %%% ------------------------------------------------------------
 \NewPart{Education}
 
-\EducationEntry{Ph.D.}{Ecology and Evolutionary Biology}{September 2021 - present}{University of Oregon}{Eugene, Oregon}
+\EducationEntry{Ph.D.}{Ecology and Evolutionary Biology}{September 2021 - present}{University of Oregon}{Eugene, Oregon}{Anticipated graduation: April 2026}
  
 \UndergradEducationEntry{Bachelor of Science}{Biology}{June 2020}
 {University of Oregon}{Eugene, Oregon}{September 2018 - June 2020}
@@ -139,34 +139,38 @@ Institute of Ecology and Evolution, University of Oregon \newline
 
 \NewPart{Research experience}
 
-\WorkEntry{Spatial dynamics of selective sweeps}{September 2022 - present}
-{Advisor: Dr. Andrew Kern}{University of Oregon}
-{Simulation-based research for PhD dissertation investigating the effects of spatial population structure on selective sweeps.}
+\WorkEntry{PhD Student}{September 2022 - present}
+{Advisor: Dr. Andrew Kern}{Institute of Ecology \& Evolution, University of Oregon}
+{Developing and applying geographically-informed population genetics methods with a focus on \textit{Anopheles gambiae}. Projects include correcting for spatial bias in machine learning inference of location from genetic data, 
+constructing open-source resources for population genetic simulation and analysis, 
+and using novel space-based methods to identify positively-selected variants.}
 
-\WorkEntry{Machine learning inference of location from genetic data}{June 2020 - present}
-{Advisor: Dr. Andrew Kern}{University of Oregon}
-{Simulation-based research investigating the impact of spatially-biased training data on machine learning inference of location from genetic data.
-}
+\WorkEntry{Rotation Student}{March 2022 - June 2022}
+{Advisor: Dr. William Cresko}{Institute of Ecology \& Evolution, University of Oregon}
+{Assessed the impact of varying
+cross-species scRNA-seq integration methods on analysis outcomes in order to improve identification of developing facial structures in Syngnathids.}
 
-\WorkEntry{Cross-species analysis of transcription expression}{March 2022 - June 2022}
-{Advisor: Dr. William Cresko}{University of Oregon}
-{Rotation project assessing the effects of 
-cross-species scRNA-seq integration methods on analysis outcomes.}
+\WorkEntry{Rotation Student}{September 2021 - December 2021}
+{Advisor: Dr. Michael Harms}{Institute of Molecular Biology, University of Oregon}
+{Investigated population-level effects on possible evolutionary trajectories across a fitness landscape with high-order epistasis using individual-based simulation.}
 
-\WorkEntry{Modeling high-order epistasis in populations}{September 2021 - December 2021}
-{Advisor: Dr. Michael Harms}{University of Oregon}
-{Rotation project simulating population-level evolutionary trajectories across fitness landscapes.
-}
+\WorkEntry{Scientific Programmer}{June 2020 - June 2021}
+{Advisor: Dr. Andrew Kern}{Institute of Ecology \& Evolution, University of Oregon}
+{Developed Python plotting tools for machine learning methods and assessed the impact of biased dispersal on machine learning inference of location from genetic data.}
 
-\WorkEntry{Bacterial-host evolutionary conflict}{April 2020 - June 2021}
-{Advisor: Dr. Matthew Barber}{University of Oregon}
-{Computational and experimental work investigating coevolutionary dynamics between the primate immune system and bacteria.}
+\WorkEntry{Research Assistant}{April 2020 - June 2021}
+{Advisors: Dr. Matthew Barber, Dr. Kristin Kohler}{Institute of Ecology \& Evolution, University of Oregon}
+{Used computational and experimental methods to investigate coevolutionary dynamics between primate lysozyme and bacterial lysozyme inhibitors.}
 
-\WorkEntry{Fitness effects of inaccurate translation}{September 2017 - June 2018}
+\WorkEntry{Undergraduate Researcher}{September 2017 - June 2018}
 {Advisor: Dr. Beth Lazazzera}{University of California, Los Angeles}
-{Experimental work investigating impacts of the loss of aminoacyl-tRNA synthetase editing on \textit{E. coli} fitness}
+{Experimental work investigating impacts of inaccurate translation caused by the loss of aminoacyl-tRNA synthetase editing on \textit{E. coli} fitness.}
 
 \NewPart{Teaching Experience}
+
+\TeachingEntry{Evolutionary Genetics Journal Club}{Fall 2024 - present}
+{Instructor}{Department of Biology, University of Oregon}
+{Organized and facilitated weekly meetings about current publications.}
 
 \TeachingEntry{Evolutionary Biology}{Fall 2023}
 {Guest Lecturer}{Department of Biology, University of Oregon}
@@ -200,11 +204,63 @@ cross-species scRNA-seq integration methods on analysis outcomes.}
 {Biology Tutor for Undergraduates}{Department of Biology, University of Oregon}
 {Assisted in instruction of students during lectures and wet and dry lab activities}
 
-\NewPart{Conferences and Meetings}
+\NewPart{Publications}
+
+\vspace{2.5mm}
+%\noindent\textit{Preprints:}
+\noindent\hangindent=2em\hangafter=1 Gower G, Pope NS, Rodrigues MF, Tittes S, Tran LN, Alam O, Cavassim MIA, Fields PD, Haller BC, Huang X, Jeffrey B, Korfmann K, Kyriazis CC, Min J, Rebello I, \textbf{Rehmann CT}, Small ST, Smith CCR, Tsambos G, Wong Y, Zhang Y, Huber CD, Gorjanc G, Ragsdale AP, Gronau I, Gutenkunst RN, Kelleher J, Lohmueller KE, Schrider DR, Ralph PL, Kern AD. Accessible, realistic genome
+simulation with selection using stdpopsim. Molecular Biology and Evolution, msaf236, September 2025. DOI:\href{https://doi.org/10.1093/molbev/msaf236}{10.1093/molbev/msaf236}
+
+\vspace{2.5mm}
+\noindent\hangindent=2em\hangafter=1 \textbf{Rehmann CT}, Small ST, Ralph PL, Kern AD. Sweeps in space: Leveraging geographic data to identify beneficial alleles in \textit{Anopheles gambiae}. Molecular Biology and Evolution, Volume 42, Issue 6, June 2025, msaf141. DOI: \href{https://doi.org/10.1093/molbev/msaf141}{10.1093/molbev/msaf141}
+
+\vspace{2.5mm}
+\noindent\hangindent=2em\hangafter=1 Chevy E, Miseon J, Caudill V, Champer S, Haller B, \textbf{Rehmann CT}, Smith CS, Tittes S, Messer P, Kern AD, Ramachandran S, Ralph PL. Population genetics meets ecology: a guide to individual-based simulations in continuous landscapes. Ecology and Evolution, Volume 15, Issue 4, March 2025, DOI: \href{https://doi.org/10.1002/ece3.71098}{10.1002/ece3.71098}
+
+\vspace{2.5mm}
+\noindent\hangindent=2em\hangafter=1 \textbf{Rehmann CT}, Ralph PL, Kern AD. Evaluating evidence for co-geography in the \textit{Anopheles Plasmodium} host-parasite system.  G3 Genes|Genomes|Genetics, Volume 14, Issue 3, March 2024, DOI: \href{https://doi.org/10.1093/g3journal/jkae008}{10.1093/g3journal/jkae008}
+
+\NewPart{Presentations}
+
+\ConferenceEntry{ESPOD Fellowship Talks}{December 2025}
+{European Bioinformatics Institute}{Hinxton, United Kingdom}
+{Invited talk: Bugs In Space: Spatial modeling of \textit{Anopheles} population genetic dynamics for vector control}
+
+\ConferenceEntry{Matheison Lab}{December 2025}
+{University of Pennsylvania}{Philadelphia, Pennsylvania, USA}
+{Invited talk: Bugs In Space: Understanding \textit{Anopheles} and \textit{Plasmodium} evolution with spatial population genetics}
+
+\ConferenceEntry{Goldberg Lab}{December 2025}
+{University of California, Los Angeles}{Los Angeles, California, USA}
+{Invited talk: Bugs In Space: Understanding \textit{Anopheles} and \textit{Plasmodium} evolution with spatial population genetics}
+
+\ConferenceEntry{Biology of Genomes}{May 2025}
+{Cold Spring Harbor Laboratory}{Cold Spring Harbor, New York, USA}
+{Poster: In space no one can hear you sweep: Leveraging geographic data to identify beneficial alleles in \textit{Anopheles gambiae}}
+
+\ConferenceEntry{EVO-WIBO}{April 2025}
+{American Society of Naturalists}{Blaine, Washington, USA}
+{Poster: In space no one can hear you sweep: Leveraging geographic data to identify beneficial alleles in \textit{Anopheles gambiae}}
+
+\ConferenceEntry{Malaria Genomics Journal Club}{24 September 2024}
+{Malaria Genomic Epidemiology Network}{virtual}
+{Invited talk: Location, location, location: Evaluating evidence for co-geography in the Anopheles Plasmodium host-parasite system}
+
+\ConferenceEntry{Genetic Epidemiology of Malaria}{September 2024}
+{Wellcome Sanger Institute}{Hinxton, United Kingdom}
+{Poster: In space no one can hear you sweep: Dynamics and outcomes of selective sweeps in continuous geographic space}
+
+\ConferenceEntry{SMBE}{July 2024}
+{Society for Moleculary Biology and Evolution}{Puerto Vallarta, Jalisco, Mexico}
+{Talk: In space no one can hear you sweep: A novel signal of selective sweeps in continuous geographic space}
 
 \ConferenceEntry{The Allied Genomics Conference}{March 2024}
 {Genetics Society of America}{National Harbor, Maryland, USA}
 {Poster: In space no one can hear you sweep: Dynamics and outcomes of selective sweeps in continuous geographic space}
+
+\ConferenceEntry{Lighthouse Lightning Talks}{2 February 2024}
+{Verena Viral Emergence Research Institute}{virtual}
+{Invited talk: Location, location, location: Evaluating evidence for co-geography in the Anopheles Plasmodium host-parasite system}
 
 \ConferenceEntry{SMBE}{July 2023}
 {Society for Moleculary Biology and Evolution}{Ferrara, Italy}
@@ -222,35 +278,39 @@ cross-species scRNA-seq integration methods on analysis outcomes.}
 {Cold Spring Harbor Laboratories}{virtual}
 {Poster: Location, location, location: Dissecting errors in machine learning prediction of geography}
 
-\NewPart{Publications}
-
-\vspace{2.5mm}
-\noindent\hangindent=2em\hangafter=1\textbf{Rehmann CR}, Ralph PL, Kern AD. Evaluating evidence for co-geography in the Anopheles Plasmodium host-parasite system.  G3 Genes|Genomes|Genetics, Volume 14, Issue 3, March 2024, jkae008, DOI: \href{doi.org/10.1093/g3journal/jkae008}{10.1093/g3journal/jkae008}
-
-\vspace{2.5mm}
-\noindent\hangindent=2em\hangafter=1\textit{In prep:} Chevy E, Miseon J, Caudill V, Champer S, Haller B, \textbf{Rehmann CR}, Smith CS, Tittes S, Messer P, Kern AD, Ramachandran S, Ralph PL. Population genetics meets ecology: a guide to simulations in continuous geography.
-
 \NewPart{Outreach and Community Involvement}
 
-\noindent \textbf{Women in Graduate Sciences}  \hfill Fall 2021 - present \par
+\noindent \textbf{Women in Graduate Science}  \hfill Fall 2021 - present \par
+\vspace{2mm}
+\textit{Webmaster} \hfill Academic Year 2025 - 2026 \par
+{\narrower \hangindent=1.5em\hangafter=1 {Updating the WGS website and social media pages; promoting WGS events and sharing information from associated organizations.} \normalsize \par }
+\vspace{1mm}
+\textit{President} \hfill Academic Year 2024 - 2025 \par
+{\narrower \hangindent=1.5em\hangafter=1 {Conducting and aiding in organization of WGS meetings and events;
+                                          collaborating with the Graduate School, UO Foundation, and Associated Students of the UO;
+                                          promoting the mission of WGS.} \normalsize \par }
 \vspace{1mm}
 \textit{Public Relations Chair} \hfill Academic Year 2023 - 2024 \par
-{\narrower \hangindent=0em\hangafter=1 {Communicating with WGS members about upcoming events, opportunities, and gatherings; 
+{\narrower \hangindent=1.5em\hangafter=1 {Communicating with WGS members; 
                                         advertising WGS events to the on- and off-campus community.} \normalsize \par }
 \vspace{1mm}
 \textit{Social Co-chair} \hfill Academic Year 2022 - 2023 \par
-{\narrower \hangindent=0em\hangafter=1 {Planning and organizing social events for WGS members and the local community.} \normalsize \par }
+{\narrower \hangindent=1.5em\hangafter=1 {Planning and organizing social events for WGS members and the local community.} \normalsize \par }
 \vspace{1mm}
 \textit{Mad Duck Outreach} \hfill Winter 2023 - present \par
-{\narrower \hangindent=1.5em\hangafter=1 {Helping to facilitate on-campus science activities for middle school students on furlough days.} \normalsize \par }
+{\narrower \hangindent=1.5em\hangafter=1 {Helping facilitate on-campus science activities for middle school students.} \normalsize \par }
 \vspace{2.5mm}
 \noindent \textbf{Graduate Evolutionary Biology and Ecology Students} \hfill Fall 2021 - present \par
+\vspace{2mm}
+\textit{Public Relations \& Website Organizer} \hfill Academic Year 2025 - 2026 \par
+{\narrower \hangindent=1.5em\hangafter=1 {Advertising GrEBES events to the on- and off-campus community;
+                                          designing and maintaining organization website.} \normalsize \par }
 \vspace{1mm}
 \textit{SPECIE2S chair} \hfill Academic year 2023 - 2024 \par
-{\narrower \hangindent=1.5em\hangafter=1 {Organizing and facilitating weekly writing groups and peer feedback sessions for graduate students.} \normalsize \par }
+{\narrower \hangindent=1.5em\hangafter=1 {Organizing and facilitating weekly writing groups and peer feedback sessions.} \normalsize \par }
 \vspace{2.5mm}
 \vspace{1mm}
-\textit{Seminar committee} \hfill Academic Year 2022 - 2023; 2023 - 2024 \par
+\textit{Seminar committee} \hfill Academic Year 2022 - 2023; 2023 - 2024; 2024 - 2025 \par
 {\narrower \hangindent=1.5em\hangafter=1 {Helping plan and organize an annual free public seminar on current topics in biology.} \normalsize \par }
 \vspace{2.5mm}
 \noindent \textbf{Genetics Society of America Member} \hfill Winter 2022 - present \par
@@ -258,6 +318,5 @@ cross-species scRNA-seq integration methods on analysis outcomes.}
 \noindent \textbf{American Society of Naturalists} \hfill Winter 2023 - present \par
 \vspace{2.5mm}
 \noindent \textbf{Society for Molecular Biology and Evolution} \hfill Spring 2023 - present \par
-
 
 \end{document}
